@@ -15,6 +15,10 @@
 ![Slide 2](images/Slide2.png)
 
 **Slide 2:** Lars Juhl Jensen is one of the three PIs behind STRING-DB. These videos are relatively short and cover concepts more that details.
+- [enrichment analysis basics](https://www.youtube.com/watch?v=2NC1QOXmc5o)
+- [introduction to STRING-DB](https://www.youtube.com/watch?v=o208DwyFbNk)
+- [enrichment analysis with STRING](https://www.youtube.com/watch?v=jUTF9tbb-nQ)
+- [STRING help center](https://www.string-db.org/cgi/help.pl)
 
 ---
 
@@ -32,7 +36,7 @@
 
 ![Slide 5](images/Slide5.png)
 
-**Slide 5:** The basic idea with the set enrichment algorithms is that you input a list of identified proteins (your full set of IDs, not just statistically significant differentially abundant proteins) along with a ranking quantity. You can pick lots of things to serve as a ranking function depending on what you want to explore. In quantitative experiments, the log2 fold change value (for pair-wise comparisons) seems like a natural choice. The sign of the log distinguishes proteins whose abundance increased from those whose abundance decreased. The data we need to paste into the input box can be easily extracted from PAW results files and/or edgeR results files. We need the UniProt accession strings and the log2 fold change values.
+**Slide 5:** The basic idea with the set enrichment algorithms is that you input a list of identified proteins (your full set of IDs, not just statistically significant differentially abundant proteins) along with a ranking quantity. You can pick lots of things to serve as a ranking function depending on what you want to explore. In quantitative experiments, the log2 fold change value (for pair-wise comparisons) seems like a natural choice. The sign of the log distinguishes proteins whose abundance increased from those whose abundance decreased. The data we need to paste into the input box can be easily extracted from PAW results files and/or edgeR results files. We need the UniProt accession strings and the log2 fold change values. This example has human proteins. Many other organisms are available in the pull down menu.
 
 Keep in mind that we are playing with protein/gene annotation terms. These are really only defined for a handful of model organisms. We can use yeast, mouse, and human accessions without any issues. Other species might require protein mapping to human, mouse, or yeast proteins to get ortholog accessions to use instead of the direct accessions. See [this blog](https://pwilmart.github.io/blog/2019/10/14/orthologs-annotations) for more about orthologs and annotations.
 
@@ -52,7 +56,9 @@ Keep in mind that we are playing with protein/gene annotation terms. These are r
 
 ![Slide 8](images/Slide8.png)
 
-**Slide 8:** You can save all the results tables (the right table blocks) in TSV (tab-separated values) files. They can all be put together as tabs in an Excel workbook to make a nice summary file. A scientist with some experience with the system under study, can probably come to some biological understanding of an experiment after spending a little time exploring the results in this browser window. I am impressed with the clean interfaces and small number of steps to perform these analyses. Doing this without using R or notebooks is important to get the scientists who know the biology over the hurdle to look at the data. This last point is the single biggest challenge in bioinformatics (ha-ha).
+**Slide 8:** You can save all the results tables (the right table blocks) in TSV (tab-separated values) files. They can all be put together as tabs in an Excel workbook to make a nice summary file. A scientist with some experience with the system under study can probably come to some biological understanding of an experiment after spending a little time exploring the results in this browser window.
+
+I am impressed with the clean interfaces and small number of steps to perform these analyses. Doing this without using R or notebooks is important to get the scientists who know the biology over the hurdle to look at the data. This last point is the single biggest challenge in bioinformatics (ha-ha).
 
 ---
 
